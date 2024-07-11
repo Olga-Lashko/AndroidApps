@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/windowBackground"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/resultNum2ImageView"
+        android:layout_width="100sp"
+        android:layout_height="100sp"
+        android:layout_marginTop="90dp"
+        app:layout_constraintEnd_toStartOf="@+id/resultNum3ImageView"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/resultNum1ImageView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/die_2" />
+
+    <ImageView
+        android:id="@+id/resultNum1ImageView"
+        android:layout_width="100sp"
+        android:layout_height="100sp"
+        android:layout_marginTop="90sp"
+        app:layout_constraintEnd_toStartOf="@+id/resultNum2ImageView"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/die_1" />
+
+    <ImageView
+        android:id="@+id/resultNum3ImageView"
+        android:layout_width="100sp"
+        android:layout_height="100sp"
+
+        android:layout_marginTop="90sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/resultNum2ImageView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/die_3" />
+
+    <TextView
+        android:id="@+id/scoreEnhancerTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60sp"
+        android:text="@string/scoreEnhancer"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/resultNum2ImageView" />
+
+    <TextView
+        android:id="@+id/scoreThisRollTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/scoreThisRoll"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+
+        app:layout_constraintEnd_toStartOf="@+id/scoreThisRollNumTextView"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scoreEnhancerTextView" />
+
+    <TextView
+        android:id="@+id/scoreThisRollNumTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10sp"
+        android:text="@string/scoreThisRollNum"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/scoreThisRollTextView"
+        app:layout_constraintTop_toTopOf="@+id/scoreThisRollTextView" />
+
+    <Button
+        android:id="@+id/rollDiceButton"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="40sp"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:onClick="rollDiceBtnClicked"
+        android:text="@string/rollDiceButton"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scoreThisRollNumTextView" />
+
+    <TextView
+        android:id="@+id/totalScoreTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="@string/totalScoreTextView"
+        android:textColor="@color/white"
+        android:textSize="44sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/totalNumTextView"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rollDiceButton" />
+
+    <TextView
+        android:id="@+id/totalNumTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10sp"
+        android:text="@string/totalNumTextView"
+        android:textColor="@color/white"
+        android:textSize="44sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/totalScoreTextView"
+        app:layout_constraintTop_toTopOf="@+id/totalScoreTextView" />
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:ems="10"
+        android:hint="@string/hintName"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/grey"
+        android:textSize="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/resultNum2ImageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textView3"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/scoreBoardButton"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="40sp"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:onClick="scoreboardBtnClicked"
+        android:text="@string/scoreboardBtn"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/totalNumTextView" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="@string/lblName"
+        android:textColor="@color/white"
+        android:textSize="24dp"
+        app:layout_constraintEnd_toStartOf="@+id/editTextName"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

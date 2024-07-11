@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:id="@+id/mapFrame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="220dp"
+        app:layout_constraintBottom_toTopOf="@+id/delButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/delButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/del_marker_btn"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mapFrame" />
+
+    <TextView
+        android:id="@+id/addInfoTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/add_info"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/delButton" />
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/title"
+        android:textSize="20sp"
+        android:paddingTop="9sp"
+        app:layout_constraintStart_toStartOf="@+id/addInfoTextView"
+        app:layout_constraintTop_toBottomOf="@+id/addInfoTextView" />
+
+    <EditText
+        android:id="@+id/placeNameTextView"
+        android:layout_width="320sp"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_name_place"
+        android:minHeight="48dp"
+        android:paddingLeft="15sp"
+        android:text=""
+        android:textColorHint="@color/gray"
+        app:layout_constraintStart_toEndOf="@+id/titleTextView"
+        app:layout_constraintTop_toTopOf="@+id/titleTextView" />
+
+    <TextView
+        android:id="@+id/snippetTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="@string/snippet"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/titleTextView"
+        app:layout_constraintTop_toBottomOf="@+id/placeNameTextView" />
+    <TextView
+        android:id="@+id/coordinatesTextView"
+        android:layout_width="320sp"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15sp"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/snippetTextView"
+        app:layout_constraintTop_toTopOf="@+id/snippetTextView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

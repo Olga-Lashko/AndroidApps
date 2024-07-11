@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Dice Game</string>
+    <string name="titleBar">Dice Game</string>
+    <string name="scoreEnhancer">No Score Enhancer</string>
+    <string name="doubleScoreEnhancer">Double: +50</string>
+    <string name="tripleScoreEnhancer">Triple: +100</string>
+    <string name="enableDouble">Double</string>
+    <string name="enableTriple">Triple</string>
+    <string name="scoreThisRoll">Score This Roll: </string>
+    <string name="scoreThisRollNum"> 0</string>
+    <string name="rollDiceButton">Roll the Dice</string>
+    <string name="totalScoreTextView">Score: </string>
+    <string name="totalNumTextView"> 0</string>
+
+    <string name="settingsMenu">Settings</string>
+    <string name="aboutMenu">About</string>
+    <string name="saveBtn">Save</string>
+    <string name="backBtn">Back</string>
+    <string name="cancelBtn">Cancel</string>
+    <string name="returnBtn">Return to game</string>
+
+    <string name="hintName">Enter your name</string>
+    <string name="lblName">Name</string>
+    <string name="scoreboardBtn">Scoreboard</string>
+
+    <string name="scoreboardPlaceholderTxt">Scoreboard Placeholder</string>
+    <string name="fiveTotalRoll">5 Total Dice Roll</string>
+
+
+    <string name="TotalRoll">0</string>
+
+    <string name="Thanks">"Thanks for playing, "</string>
+
+    <string name="aboutText">* Roll Dice Game\n* Class: CITC 2376, Spring 2024\n* Author  Olga Lashko\n* Version March 21, 2024</string>
+
+
+</resources>

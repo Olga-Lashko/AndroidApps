@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Geo Alert</string>
+    <string name="distanceTextView">Distance to Target: </string>
+    <string name="alertTextView">Alert at: </string>
+    <string name="alertEditText">enter distance </string>
+    <string name="saveBtn">Save Alert</string>
+    <string name="googleApi">AIzaSyBcReIf1A0mI7x93UQWzj3meihwBfH6OZU</string>
+
+</resources>
