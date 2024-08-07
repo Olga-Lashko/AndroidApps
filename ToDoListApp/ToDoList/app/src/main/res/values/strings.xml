@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">To Do List</string>
+
+    <string name="add_list_button">Add New List +</string>
+    <string name="add_item_button">Add New Item</string>
+    <string name="hint_name_list">Name Your List</string>
+    <string name="titleLabelTextView">Title: </string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="aboutText">* Final Project To Do List\n*
+        Class: CITC 2376, Spring 2024\n*
+        Author:  Olga Lashko\n*
+        Version: May 3, 2024</string>
+    <string name="about_label">About</string>
+    <string name="back_btn">Back</string>
+    <string name="save_btn">Save</string>
+    <string name="cancel_btn">Cancel</string>
+    <string name="item_hint">Type your task here</string>
+
+</resources>
